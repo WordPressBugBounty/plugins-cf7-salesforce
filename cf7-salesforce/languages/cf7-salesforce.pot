@@ -1,0 +1,1681 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Contact Form 7 Salesforce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-10-15 04:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.0; wp-5.2.4"
+
+#: templates/settings-table.php:31 templates/settings-table.php:68
+msgid "#"
+msgstr ""
+
+#: cf7-salesforce.php:673
+#, php-format
+msgid "%s Deleted"
+msgstr ""
+
+#: cf7-salesforce.php:675
+#, php-format
+msgid "%s Filtered"
+msgstr ""
+
+#: pro/plugin-api.php:399
+#, php-format
+msgid "%s Update is available"
+msgstr ""
+
+#: pro/plugin-api.php:401
+#, php-format
+msgid "%s Update is not available"
+msgstr ""
+
+#: pro/pro-mapping.php:166
+#, php-format
+msgid "%s. Add as Campaign Member"
+msgstr ""
+
+#: templates/fields-mapping.php:567
+#, php-format
+msgid "%s. Add Note."
+msgstr ""
+
+#: pro/pro-mapping.php:74
+#, php-format
+msgid "%s. Assign Account"
+msgstr ""
+
+#: pro/pro-mapping.php:253
+#, php-format
+msgid "%s. Assign Contact"
+msgstr ""
+
+#: pro/pro-mapping.php:120
+#, php-format
+msgid "%s. Assign Contract"
+msgstr ""
+
+#: templates/fields-mapping.php:509
+#, php-format
+msgid "%s. Choose Primary Key."
+msgstr ""
+
+#: pro/pro-mapping.php:12
+#, php-format
+msgid "%s. Object Owner"
+msgstr ""
+
+#: cf7-salesforce.php:346
+#, php-format
+msgid "%sContact Form Entries%s is required. %s it today!%s"
+msgstr ""
+
+#: templates/fields-mapping.php:532
+msgid ""
+"(optional) If you set second key then plugin will find results matching with "
+"first primary key OR second primary key"
+msgstr ""
+
+#: templates/feed-account.php:292
+msgid "1. Enter feed name"
+msgstr ""
+
+#: templates/feed-account.php:312
+msgid "2. Select Salesforce Account."
+msgstr ""
+
+#: templates/feed-account.php:351
+msgid "3. Select Contact Form."
+msgstr ""
+
+#: templates/feed-object.php:6
+msgid "4. Select the Object to create when a form is submitted."
+msgstr ""
+
+#: templates/fields-mapping.php:8
+msgid "5. Map Form Fields to Salesforce Fields."
+msgstr ""
+
+#: templates/fields-mapping.php:298
+msgid "6. When to Send Entry to Salesforce."
+msgstr ""
+
+#: cf7-salesforce.php:350
+#, php-format
+msgid ""
+"A higher version of %sContact Form Entries%s is required. %sPurchase it "
+"today!%s"
+msgstr ""
+
+#: includes/plugin-pages.php:652
+msgid ""
+"A new product will be created in selected Pricebook. You can add a "
+"description for new products created by this plugin."
+msgstr ""
+
+#: pro/add-ons.php:944
+msgid "Access Denied"
+msgstr ""
+
+#: templates/settings-table.php:32 templates/settings-table.php:69
+msgid "Account"
+msgstr ""
+
+#: includes/plugin-pages.php:528
+msgid "Account Deleted Successfully"
+msgstr ""
+
+#: templates/setting.php:8
+msgid "Account Name"
+msgstr ""
+
+#: templates/settings-table.php:36 templates/settings-table.php:73
+msgid "Action"
+msgstr ""
+
+#: pro/add-ons.php:712
+msgid "Activate"
+msgstr ""
+
+#: pro/plugin-api.php:796
+#, php-format
+msgid "Activate %s"
+msgstr ""
+
+#: pro/add-ons.php:672 templates/feeds.php:100 templates/feeds.php:100
+#: templates/feeds.php:176 templates/feeds.php:176 templates/logs.php:385
+msgid "Active"
+msgstr ""
+
+#: templates/fields-mapping.php:477 templates/settings.php:87
+msgid ""
+"Add / delete notes to Salesforce when added / deleted in Contact Form "
+"Entries Plugin"
+msgstr ""
+
+#: templates/fields-mapping.php:396 templates/fields-mapping.php:397
+#: templates/fields-mapping.php:451 templates/fields-mapping.php:452
+msgid "Add AND Filter"
+msgstr ""
+
+#: templates/fields-mapping.php:237
+msgid "Add Custom Field"
+msgstr ""
+
+#: templates/fields-mapping.php:275
+msgid "Add Field"
+msgstr ""
+
+#: templates/feeds.php:28
+msgid "Add New"
+msgstr ""
+
+#: templates/accounts.php:107
+msgid "Add New Account"
+msgstr ""
+
+#: templates/feed-account.php:263
+msgid "Add New Feed"
+msgstr ""
+
+#: templates/fields-mapping.php:243
+msgid "Add New Field"
+msgstr ""
+
+#: templates/fields-mapping.php:578
+msgid "Add Note "
+msgstr ""
+
+#: templates/fields-mapping.php:411 templates/fields-mapping.php:412
+msgid "Add OR Filter"
+msgstr ""
+
+#: pro/pro-mapping.php:173
+msgid "Add to Campaign"
+msgstr ""
+
+#: pro/add-ons.php:954
+msgid "Add-on name not specified."
+msgstr ""
+
+#: cf7-salesforce.php:650
+msgid "Added to "
+msgstr ""
+
+#: templates/logs.php:203
+msgid "All Feeds"
+msgstr ""
+
+#: templates/logs.php:238
+msgid "All Objects"
+msgstr ""
+
+#: templates/logs.php:249
+msgid "All Status"
+msgstr ""
+
+#: templates/logs.php:261
+msgid "All Times"
+msgstr ""
+
+#: templates/fields-mapping.php:362 templates/fields-mapping.php:425
+msgid "AND"
+msgstr ""
+
+#: templates/setting.php:37
+msgid "API"
+msgstr ""
+
+#: templates/feeds.php:59 templates/logs.php:293 templates/logs.php:293
+msgid "Apply"
+msgstr ""
+
+#: templates/feeds.php:58
+msgid "Apply Action"
+msgstr ""
+
+#: templates/settings-table.php:80
+msgid "Are you sure to delete Account ?"
+msgstr ""
+
+#: templates/feeds.php:193
+msgid "Are you sure to Delete selected feeds?"
+msgstr ""
+
+#: templates/feed-account.php:625
+msgid "Are you sure to remove ?"
+msgstr ""
+
+#: pro/pro-mapping.php:84
+msgid "Assign Account"
+msgstr ""
+
+#: pro/pro-mapping.php:261
+msgid "Assign Contact "
+msgstr ""
+
+#: pro/pro-mapping.php:128
+msgid "Assign Contract"
+msgstr ""
+
+#: pro/pro-mapping.php:19
+msgid "Assign Owner"
+msgstr ""
+
+#: includes/plugin-pages.php:626
+msgid ""
+"Associate your Salesforce fields to the appropriate Contact Form fields."
+msgstr ""
+
+#: templates/setting.php:75
+#, php-format
+msgid "Authorized Connection to %s on %s"
+msgstr ""
+
+#: templates/accounts.php:111
+msgid "Back to Accounts"
+msgstr ""
+
+#: pro/add-ons.php:897
+msgid "Back to CRM Perks Page"
+msgstr ""
+
+#: templates/feed-account.php:267
+msgid "Back to Feeds"
+msgstr ""
+
+#: includes/plugin-pages.php:1131
+msgid "Bulk Action"
+msgstr ""
+
+#: templates/feeds.php:48 templates/feeds.php:52
+msgid "Bulk action"
+msgstr ""
+
+#: templates/setting.php:158
+msgid "Callback URL"
+msgstr ""
+
+#: pro/pro-mapping.php:185
+msgid "Campaign & Status Lists"
+msgstr ""
+
+#: includes/plugin-pages.php:688
+msgid "Capsule"
+msgstr ""
+
+#: pro/plugin-api.php:116
+msgid "Check for updates"
+msgstr ""
+
+#: includes/plugin-pages.php:666 includes/plugin-pages.php:670
+msgid "Check this option if you want to send more data as CRM entry note."
+msgstr ""
+
+#: templates/logs.php:453
+msgid "Clear Salesforce Log"
+msgstr ""
+
+#: templates/log.php:139
+msgid "Close"
+msgstr ""
+
+#: templates/logs.php:605
+msgid "Collapse Detail"
+msgstr ""
+
+#: templates/settings-table.php:47
+msgid "Connected"
+msgstr ""
+
+#: includes/plugin-pages.php:1637
+msgid "Connection to Salesforce is NOT Working"
+msgstr ""
+
+#: includes/plugin-pages.php:1639
+msgid "Connection to Salesforce is Working"
+msgstr ""
+
+#: templates/setting.php:122
+msgid "Consumer Key"
+msgstr ""
+
+#: templates/setting.php:145
+msgid "Consumer Secret"
+msgstr ""
+
+#. Name of the plugin
+msgid "Contact Form 7 Salesforce"
+msgstr ""
+
+#: cf7-salesforce.php:348
+#, php-format
+msgid ""
+"Contact Form Entries is installed but not active. %sActivate Contact Form "
+"Entries%s to use the Contact Form Salesforce Plugin"
+msgstr ""
+
+#: includes/plugin-pages.php:1755
+msgid "Contact Form Fields"
+msgstr ""
+
+#: templates/feed-account.php:359
+msgid "Contact Form Form"
+msgstr ""
+
+#: cf7-salesforce.php:275 cf7-salesforce.php:280
+msgid "Contact Form Salesforce Plugin"
+msgstr ""
+
+#: includes/plugin-pages.php:1528
+#, php-format
+msgid ""
+"Contact Form Salesforce Plugin has been successfully uninstalled. It can be "
+"re-activated from the %s plugins page %s."
+msgstr ""
+
+#: templates/setting.php:138
+msgid "Copy Consumer Key and Secret"
+msgstr ""
+
+#: includes/plugin-pages.php:643
+msgid "Create a Salesforce Order product for each Woocommrce Cart item."
+msgstr ""
+
+#: templates/fields-mapping.php:552
+msgid "Create New Entry "
+msgstr ""
+
+#: cf7-salesforce.php:749 cf7-salesforce.php:770
+msgid ""
+"Create or update this entry in Salesforce. The fields will be mapped "
+"according to the form feed settings."
+msgstr ""
+
+#: cf7-salesforce.php:682 includes/plugin-pages.php:1137 templates/feeds.php:71
+#: templates/feeds.php:81 templates/settings-table.php:34
+#: templates/settings-table.php:71
+msgid "Created"
+msgstr ""
+
+#. Author of the plugin
+#: pro/add-ons.php:67 pro/add-ons.php:68
+msgid "CRM Perks"
+msgstr ""
+
+#: templates/fields-mapping.php:28 templates/fields-mapping.php:149
+msgid "Custom Field"
+msgstr ""
+
+#: includes/plugin-pages.php:1268 templates/fields-mapping.php:121
+#: templates/fields-mapping.php:125 templates/fields-mapping.php:208
+#: templates/fields-mapping.php:212
+msgid "Custom Value"
+msgstr ""
+
+#: templates/log.php:10
+msgid "Data Sent"
+msgstr ""
+
+#: pro/add-ons.php:719
+msgid "Deactivate"
+msgstr ""
+
+#: templates/setting.php:59
+msgid "Debugging Email"
+msgstr ""
+
+#: includes/plugin-pages.php:1131 pro/add-ons.php:713 templates/feeds.php:55
+#: templates/feeds.php:109 templates/feeds.php:110
+#: templates/fields-mapping.php:55 templates/fields-mapping.php:151
+#: templates/settings-table.php:58
+msgid "Delete"
+msgstr ""
+
+#: templates/settings.php:78
+msgid "Delete Entry"
+msgstr ""
+
+#: templates/settings.php:79
+msgid ""
+"Delete entry data from Salesforce when deleted from Contact Form Entries "
+"Plugin"
+msgstr ""
+
+#: templates/feeds.php:155
+msgid "Delete this feed? 'Cancel' to stop, 'OK' to delete."
+msgstr ""
+
+#: cf7-salesforce.php:688 includes/plugin-pages.php:1137
+msgid "Deleted"
+msgstr ""
+
+#: includes/plugin-pages.php:584 templates/logs.php:341 templates/logs.php:361
+msgid "Description"
+msgstr ""
+
+#: templates/logs.php:346 templates/logs.php:366
+msgid "Detail"
+msgstr ""
+
+#: templates/log.php:124
+msgid "Detail Not Found"
+msgstr ""
+
+#: templates/fields-mapping.php:307 templates/fields-mapping.php:314
+msgid "Disable Automatic Export"
+msgstr ""
+
+#: templates/fields-mapping.php:637
+msgid "Disable Note "
+msgstr ""
+
+#: pro/add-ons.php:672
+msgid "Disabled"
+msgstr ""
+
+#: templates/settings-table.php:47
+msgid "Disconnected"
+msgstr ""
+
+#: cf7-salesforce.php:276
+msgid "Dismiss Notice"
+msgstr ""
+
+#: templates/logs.php:322 templates/logs.php:454
+msgid "Displaying"
+msgstr ""
+
+#: templates/fields-mapping.php:644
+msgid "Do not Add Note if entry already exists in Salesforce"
+msgstr ""
+
+#: templates/fields-mapping.php:556
+msgid "Do not create new entry in Salesforce"
+msgstr ""
+
+#: templates/fields-mapping.php:544
+msgid "Do not update entry, if already exists"
+msgstr ""
+
+#: pro/plugin-api.php:805
+#, php-format
+msgid "Don't have a license key? Purchase one %s here %s."
+msgstr ""
+
+#: templates/fields-mapping.php:76 templates/fields-mapping.php:165
+msgid "e.g:"
+msgstr ""
+
+#: templates/feeds.php:105 templates/settings-table.php:56
+msgid "Edit"
+msgstr ""
+
+#: templates/log.php:134 templates/logs.php:426
+msgid "Edit Feed"
+msgstr ""
+
+#: templates/feed-account.php:261
+#, php-format
+msgid "Edit Salesforce Feed # %d"
+msgstr ""
+
+#: templates/feeds.php:104
+msgid "Edit Settings"
+msgstr ""
+
+#: pro/pro-mapping.php:88 pro/pro-mapping.php:132 pro/pro-mapping.php:177
+#: pro/pro-mapping.php:265 templates/fields-mapping.php:334
+#: templates/fields-mapping.php:585
+msgid "Enable"
+msgstr ""
+
+#: includes/plugin-pages.php:657
+msgid "Enable this option , if you want to assign a Contract to this object"
+msgstr ""
+
+#: includes/plugin-pages.php:668 includes/plugin-pages.php:672
+msgid "Enable this option if you want to add note only for new CRM entry"
+msgstr ""
+
+#: includes/plugin-pages.php:654
+msgid "Enable this option if you want to assign an account this object."
+msgstr ""
+
+#: includes/plugin-pages.php:661
+msgid "Enable this option if you want to assign another object owner."
+msgstr ""
+
+#: includes/plugin-pages.php:632
+msgid ""
+"Enable this option if you want to synchronize Contact Form entry notes to "
+"Salesforce Object notes. For example , when you add a note to a Contact Form "
+"entry, it will be added to the Salesforce Object selected in the feed."
+msgstr ""
+
+#: includes/plugin-pages.php:663
+msgid ""
+"Enable this option if you want to synchronize WooCommerce Order notes to "
+"Salesforce Object notes. For example, when you add a note to a WooCommerce "
+"Order, it will be added to the Salesforce Object selected in the feed."
+msgstr ""
+
+#: templates/setting.php:135
+#, php-format
+msgid "Enter %s or %s in Callback URL"
+msgstr ""
+
+#: templates/setting.php:134
+msgid ""
+"Enter Application Name(eg. My App) then check \"Enable OAuth Settings\" "
+"checkbox"
+msgstr ""
+
+#: pro/pro-mapping.php:206 pro/pro-mapping.php:212
+msgid "Enter Campaign ID"
+msgstr ""
+
+#: pro/pro-mapping.php:218
+msgid "Enter Campaign Id"
+msgstr ""
+
+#: templates/setting.php:109
+msgid "Enter comma separated email addresses"
+msgstr ""
+
+#: templates/setting.php:110
+msgid ""
+"Enter comma separated email addresses. An email will be sent to these email "
+"addresses if an order is not properly added to Salesforce. Leave blank to "
+"disable."
+msgstr ""
+
+#: includes/plugin-pages.php:621
+msgid "Enter feed name of your choice."
+msgstr ""
+
+#: pro/plugin-api.php:918
+msgid "Enter License Key"
+msgstr ""
+
+#: pro/pro-mapping.php:233
+msgid "Enter Member Status"
+msgstr ""
+
+#: pro/plugin-api.php:814
+msgid "Enter Your License Key"
+msgstr ""
+
+#: cf7-salesforce.php:1558
+msgid "Entry added in Salesforce"
+msgstr ""
+
+#: includes/plugin-pages.php:1752
+msgid "Entry Created"
+msgstr ""
+
+#: cf7-salesforce.php:1566
+msgid "Entry deleted from Salesforce"
+msgstr ""
+
+#: cf7-salesforce.php:1574
+msgid "Entry filtered"
+msgstr ""
+
+#: includes/plugin-pages.php:584 includes/plugin-pages.php:1748
+#: templates/logs.php:337 templates/logs.php:357
+msgid "Entry ID"
+msgstr ""
+
+#: includes/plugin-pages.php:1099
+msgid "Entry Not Found"
+msgstr ""
+
+#: templates/settings.php:86
+msgid "Entry Notes"
+msgstr ""
+
+#: templates/fields-mapping.php:473
+msgid "Entry Notes "
+msgstr ""
+
+#: includes/plugin-pages.php:1753
+msgid "Entry Updated"
+msgstr ""
+
+#: cf7-salesforce.php:1568
+msgid "Entry updated in Salesforce"
+msgstr ""
+
+#: templates/setting.php:18
+msgid "Environment"
+msgstr ""
+
+#: pro/add-ons.php:1005
+msgid "ERROR"
+msgstr ""
+
+#: includes/plugin-pages.php:608
+msgid "Error While Clearing Salesforce Logs"
+msgstr ""
+
+#: cf7-salesforce.php:1582
+#, php-format
+msgid "Error while creating %s"
+msgstr ""
+
+#: pro/plugin-api.php:769
+msgid "Error while installing Plugin"
+msgstr ""
+
+#: includes/plugin-pages.php:531
+msgid "Error While Removing Account"
+msgstr ""
+
+#: cf7-salesforce.php:1580
+msgid "Errors when adding to Salesforce. Entry not sent"
+msgstr ""
+
+#: cf7-salesforce.php:1577
+msgid ""
+"Errors when adding to Salesforce. Entry not sent! Check the Entry Notes "
+"below for more details."
+msgstr ""
+
+#: includes/crmperks-cf.php:45 pro/pro-mapping.php:13 pro/pro-mapping.php:77
+#: pro/pro-mapping.php:121 pro/pro-mapping.php:167 pro/pro-mapping.php:254
+#: templates/feed-account.php:293 templates/feed-account.php:313
+#: templates/feed-account.php:352 templates/feed-object.php:7
+#: templates/fields-mapping.php:9 templates/fields-mapping.php:57
+#: templates/fields-mapping.php:152 templates/fields-mapping.php:244
+#: templates/fields-mapping.php:299 templates/fields-mapping.php:510
+#: templates/fields-mapping.php:568 templates/log.php:11 templates/log.php:50
+#: templates/log.php:75
+msgid "Expand / Collapse"
+msgstr ""
+
+#: templates/logs.php:598
+msgid "Expand Detail"
+msgstr ""
+
+#: templates/logs.php:430
+msgid "Expand Details"
+msgstr ""
+
+#: templates/logs.php:301
+msgid "Export as CSV"
+msgstr ""
+
+#: templates/logs.php:535
+msgid ""
+"Exporting more than 4 entries may take too long.\\n Are you sure you want to "
+"continue?"
+msgstr ""
+
+#: cf7-salesforce.php:680 includes/plugin-pages.php:1137
+msgid "Failed"
+msgstr ""
+
+#: includes/plugin-pages.php:1708
+msgid "Feed could not be updated. Please enter all required information below."
+msgstr ""
+
+#: includes/plugin-pages.php:1019
+msgid "Feed deleted."
+msgstr ""
+
+#: templates/logs.php:340 templates/logs.php:360
+msgid "Feed ID"
+msgstr ""
+
+#: templates/feed-account.php:299
+msgid "Feed Name"
+msgstr ""
+
+#: includes/plugin-pages.php:1705
+#, php-format
+msgid "Feed Updated. %sback to list%s"
+msgstr ""
+
+#: includes/plugin-pages.php:1034
+msgid "Feeds deleted."
+msgstr ""
+
+#: templates/fields-mapping.php:91 templates/fields-mapping.php:93
+#: templates/fields-mapping.php:177 templates/fields-mapping.php:179
+msgid "Field API Name"
+msgstr ""
+
+#: templates/fields-mapping.php:102 templates/fields-mapping.php:188
+msgid "Field Type"
+msgstr ""
+
+#: templates/fields-mapping.php:15
+msgid "Fields Mapping"
+msgstr ""
+
+#: cf7-salesforce.php:686 includes/plugin-pages.php:1137
+msgid "Filtered"
+msgstr ""
+
+#: includes/plugin-pages.php:1132
+msgid "Force Send to Salesforce - Ignore filters"
+msgstr ""
+
+#: includes/plugin-pages.php:1749
+msgid "Form ID"
+msgstr ""
+
+#: includes/plugin-pages.php:1750
+msgid "Form Title"
+msgstr ""
+
+#: templates/logs.php:272
+msgid "From Date"
+msgstr ""
+
+#: includes/plugin-pages.php:646
+msgid "Get Campaigns and Status list from salesforce."
+msgstr ""
+
+#: pro/plugin-api.php:908
+msgid "Get License Key"
+msgstr ""
+
+#: includes/plugin-pages.php:645
+msgid "Get PriceBooks list from salesforce."
+msgstr ""
+
+#: includes/plugin-pages.php:662
+msgid "Get Users list from Salesforce"
+msgstr ""
+
+#: includes/crmperks-cf.php:56
+msgid "Go Pro!"
+msgstr ""
+
+#: pro/add-ons.php:60
+#, php-format
+msgid "Go to %sCRM Perks%s Page to manage Add-ons"
+msgstr ""
+
+#: templates/crm-entry-box.php:22
+msgid "Go to Logs"
+msgstr ""
+
+#: cf7-salesforce.php:779
+msgid "Go to Salesforce Logs"
+msgstr ""
+
+#: pro/add-ons.php:731
+msgid "Go to Settings"
+msgstr ""
+
+#: includes/plugin-pages.php:970
+msgid "Hide Key"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.crmperks.com"
+msgstr ""
+
+#. URI of the plugin
+msgid ""
+"https://www.crmperks.com/plugins/contact-form-plugins/contact-form-"
+"salesforce-plugin/"
+msgstr ""
+
+#: includes/plugin-pages.php:1766
+msgid "ID from other Feeds"
+msgstr ""
+
+#: includes/plugin-pages.php:660
+msgid "If enabled, Lead/Contact will be added to selected Campaign"
+msgstr ""
+
+#: includes/plugin-pages.php:630
+msgid ""
+"If you do not want all entries sent to Salesforce, but only specific, "
+"approved entries, check this box. To manually send an entry to Salesforce, "
+"go to Entries, choose the entry you would like to send to Salesforce, and "
+"then click the \"Send to Salesforce\" button."
+msgstr ""
+
+#: pro/plugin-api.php:908
+#, php-format
+msgid "If you don't have a license key, you can get from %shere%s."
+msgstr ""
+
+#: templates/accounts.php:116
+#, php-format
+msgid ""
+"If you don't have a Salesforce account, you can %ssign up for one here%s."
+msgstr ""
+
+#: templates/fields-mapping.php:521
+msgid ""
+"If you want to update a pre-existing object, select what should be used as a "
+"unique identifier (\"Primary Key\"). For example, this may be an email "
+"address, lead ID, or address. When a new entry comes in with the same "
+"\"Primary Key\" you select, a new object will not be created, instead the "
+"pre-existing object will be updated."
+msgstr ""
+
+#: templates/setting.php:52
+msgid "in salesforce Go to Setup -> Company information -> Organization ID"
+msgstr ""
+
+#: templates/setting.php:133
+msgid ""
+"In Salesforce, go to Setup -> App Manager -> create new \"Connected APP\""
+msgstr ""
+
+#: templates/fields-mapping.php:94 templates/fields-mapping.php:180
+msgid ""
+"In Salesforce, go to setup -> customize -> leads -> fields and copy API name "
+"of a field"
+msgstr ""
+
+#: templates/feeds.php:100 templates/feeds.php:172 templates/feeds.php:172
+#: templates/logs.php:385
+msgid "Inactive"
+msgstr ""
+
+#: pro/add-ons.php:706
+msgid "Install"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Integrates Contact Form 7 and <a href=\"https://wordpress."
+"org/plugins/contact-form-entries/\">Contact Form Entries Plugin</a> with "
+"Salesforce allowing form submissions to be automatically sent to your "
+"Salesforce account"
+msgstr ""
+
+#: templates/setting.php:34
+msgid "Integration Method"
+msgstr ""
+
+#: includes/plugin-pages.php:1589
+msgid "Invalid Email(s)"
+msgstr ""
+
+#: includes/plugin-pages.php:1891
+msgid "Invalid Org ID. Please check your Org ID and try again."
+msgstr ""
+
+#: templates/settings-table.php:35 templates/settings-table.php:72
+msgid "Last Connection"
+msgstr ""
+
+#: pro/plugin-api.php:748 pro/plugin-api.php:809 pro/plugin-api.php:906
+#: pro/plugin-api.php:912
+msgid "License Key"
+msgstr ""
+
+#: pro/plugin-api.php:930
+#, php-format
+msgid "License Key is Valid - %s"
+msgstr ""
+
+#: templates/feed-account.php:395 templates/feed-object.php:48
+msgid "Loading, Please Wait..."
+msgstr ""
+
+#: templates/setting.php:84
+msgid "Login with Salesforce"
+msgstr ""
+
+#: pro/add-ons.php:72 pro/add-ons.php:548
+msgid "Manage Add-ons"
+msgstr ""
+
+#: templates/fields-mapping.php:318
+msgid "Manually send the entries to Salesforce."
+msgstr ""
+
+#: includes/crmperks-cf.php:44
+msgid "Marketing Data"
+msgstr ""
+
+#: templates/fields-mapping.php:71 templates/fields-mapping.php:164
+msgid "Max Length:"
+msgstr ""
+
+#: pro/pro-mapping.php:225
+msgid "Member Status"
+msgstr ""
+
+#: templates/log.php:74
+msgid "More Detail"
+msgstr ""
+
+#: templates/feeds.php:95
+msgid "N/A"
+msgstr ""
+
+#: templates/feeds.php:68 templates/feeds.php:78
+msgid "Name"
+msgstr ""
+
+#: templates/fields-mapping.php:64 templates/fields-mapping.php:162
+msgid "Name:"
+msgstr ""
+
+#: includes/crmperks-cf.php:56
+msgid "Need Marketing Insight? ,"
+msgstr ""
+
+#: pro/add-ons.php:690
+#, php-format
+msgid "New Version %s is available."
+msgstr ""
+
+#: includes/crmperks-cf.php:64
+msgid "No Information Available"
+msgstr ""
+
+#: templates/logs.php:440
+msgid "No Record(s) Found"
+msgstr ""
+
+#: templates/settings-table.php:62
+#, php-format
+msgid "No Salesforce Account Found. %sAdd New Account%s"
+msgstr ""
+
+#: pro/add-ons.php:672
+msgid "Not Installed"
+msgstr ""
+
+#: templates/fields-mapping.php:596
+msgid "Note Fields "
+msgstr ""
+
+#: templates/fields-mapping.php:628
+msgid "Note will be added to selected related list in salesforce."
+msgstr ""
+
+#: templates/log.php:38
+msgid "Nothing Posted to Salesforce"
+msgstr ""
+
+#: templates/accounts.php:89
+msgid "Notification - Remove Connection?"
+msgstr ""
+
+#: templates/setting.php:108
+msgid "Notify by Email on Errors"
+msgstr ""
+
+#: includes/plugin-pages.php:655
+msgid "Object created by this feed will be assigned to the selected Account."
+msgstr ""
+
+#: templates/settings.php:65
+msgid "On deleting this plugin remove all of its data"
+msgstr ""
+
+#: templates/log.php:138
+msgid "Open in New Window"
+msgstr ""
+
+#: templates/fields-mapping.php:326
+msgid "Opt-In Condition"
+msgstr ""
+
+#: templates/fields-mapping.php:348 templates/fields-mapping.php:420
+msgid "OR"
+msgstr ""
+
+#: includes/plugin-pages.php:1751
+msgid "Page URL"
+msgstr ""
+
+#: includes/plugin-pages.php:1359
+msgid "Please Choose Account"
+msgstr ""
+
+#: includes/plugin-pages.php:1324 includes/plugin-pages.php:1361
+msgid "Please Choose Form"
+msgstr ""
+
+#: includes/plugin-pages.php:1322
+msgid "Please Choose Object"
+msgstr ""
+
+#: templates/feeds.php:186 templates/logs.php:526
+msgid "Please Select Action"
+msgstr ""
+
+#: templates/logs.php:530
+msgid "Please select at least one entry"
+msgstr ""
+
+#: templates/feeds.php:190
+msgid "Please Select Feed"
+msgstr ""
+
+#: templates/feed-account.php:641
+msgid "Please Select Field Name"
+msgstr ""
+
+#: templates/settings.php:62
+msgid "Plugin Data"
+msgstr ""
+
+#: pro/plugin-api.php:773
+msgid "Plugin installed successfully"
+msgstr ""
+
+#: pro/add-ons.php:1014
+msgid "Plugin Not Found"
+msgstr ""
+
+#: templates/feeds.php:70 templates/feeds.php:80
+msgid "Primary Key"
+msgstr ""
+
+#: templates/setting.php:22
+msgid "Production"
+msgstr ""
+
+#: templates/setting.php:61
+msgid ""
+"Recommended - Salesforce will send notification about success or failure of "
+"lead/case to debug email."
+msgstr ""
+
+#: pro/plugin-api.php:785
+msgid "Redirecting, Please Wait"
+msgstr ""
+
+#: pro/add-ons.php:579
+msgid "Refresh Add-ons List"
+msgstr ""
+
+#: pro/pro-mapping.php:34 pro/pro-mapping.php:189
+msgid "Refresh Data"
+msgstr ""
+
+#: templates/feed-object.php:38 templates/feed-object.php:39
+msgid "Refresh Fields"
+msgstr ""
+
+#: templates/feed-object.php:33 templates/feed-object.php:34
+msgid "Refresh Objects"
+msgstr ""
+
+#: pro/pro-mapping.php:35 pro/pro-mapping.php:190 templates/feed-object.php:35
+#: templates/feed-object.php:40
+msgid "Refreshing..."
+msgstr ""
+
+#: templates/fields-mapping.php:22 templates/fields-mapping.php:23
+msgid "Required"
+msgstr ""
+
+#: templates/settings.php:82
+msgid "Restore Entry"
+msgstr ""
+
+#: templates/settings.php:83
+msgid ""
+"Restore entry in Salesforce when restored in Contact Form Entries Plugin"
+msgstr ""
+
+#: templates/setting.php:93 templates/setting.php:94
+msgid "Revoke Access"
+msgstr ""
+
+#: cf7-salesforce.php:1661 includes/plugin-pages.php:489
+#: includes/plugin-pages.php:773 includes/plugin-pages.php:1307
+msgid "Salesforce"
+msgstr ""
+
+#: templates/setting.php:69
+msgid "Salesforce Access"
+msgstr ""
+
+#: templates/feed-account.php:320
+msgid "Salesforce Account"
+msgstr ""
+
+#: templates/accounts.php:104
+msgid "Salesforce Account #"
+msgstr ""
+
+#: includes/plugin-pages.php:890 templates/accounts.php:102
+msgid "Salesforce Accounts"
+msgstr ""
+
+#: templates/setting.php:115
+msgid "Salesforce App"
+msgstr ""
+
+#: templates/setting.php:159
+msgid "Salesforce Callback URL"
+msgstr ""
+
+#: templates/accounts.php:75
+msgid "Salesforce Client ID Changed.Please save new changes first"
+msgstr ""
+
+#: templates/setting.php:126
+msgid "Salesforce Consumer Key"
+msgstr ""
+
+#: templates/setting.php:149
+msgid "Salesforce Consumer Secret"
+msgstr ""
+
+#: templates/setting.php:57
+msgid "Salesforce Debugging Emails"
+msgstr ""
+
+#: includes/plugin-pages.php:890 templates/accounts.php:100
+#: templates/accounts.php:100 templates/feed-account.php:260
+#: templates/feed-account.php:260 templates/feeds.php:27 templates/feeds.php:27
+#: templates/feeds.php:27 templates/logs.php:202 templates/logs.php:202
+msgid "Salesforce Feeds"
+msgstr ""
+
+#: includes/plugin-pages.php:488
+msgid "Salesforce for Contact Form"
+msgstr ""
+
+#: includes/plugin-pages.php:584 templates/logs.php:334 templates/logs.php:354
+msgid "Salesforce ID"
+msgstr ""
+
+#: includes/plugin-pages.php:890 templates/logs.php:202
+msgid "Salesforce Log"
+msgstr ""
+
+#: cf7-salesforce.php:779
+msgid "Salesforce Logs"
+msgstr ""
+
+#: includes/plugin-pages.php:611
+msgid "Salesforce Logs Cleared Successfully"
+msgstr ""
+
+#: templates/logs.php:541
+msgid "Salesforce Logs will be deleted permanently. Do you want to continue?"
+msgstr ""
+
+#: templates/feed-object.php:14 templates/feeds.php:69 templates/feeds.php:79
+msgid "Salesforce Object"
+msgstr ""
+
+#: templates/setting.php:44
+msgid "Salesforce Org. ID"
+msgstr ""
+
+#: templates/setting.php:48
+msgid "Salesforce Organization ID"
+msgstr ""
+
+#: templates/fields-mapping.php:618
+msgid "Salesforce Related List "
+msgstr ""
+
+#: templates/log.php:49
+msgid "Salesforce Response"
+msgstr ""
+
+#: templates/setting.php:22
+msgid "Sandbox"
+msgstr ""
+
+#: templates/setting.php:167
+msgid "Save Changes"
+msgstr ""
+
+#: templates/fields-mapping.php:666
+msgid "Save Feed"
+msgstr ""
+
+#: pro/plugin-api.php:936
+msgid "Save License Key"
+msgstr ""
+
+#: pro/plugin-api.php:817 templates/settings.php:95 templates/settings.php:95
+msgid "Save Settings"
+msgstr ""
+
+#: templates/logs.php:225 templates/logs.php:276 templates/logs.php:276
+msgid "Search"
+msgstr ""
+
+#: templates/fields-mapping.php:527
+msgid "Second Primary Key"
+msgstr ""
+
+#: templates/feed-account.php:365
+msgid "Select a Form"
+msgstr ""
+
+#: templates/feed-account.php:326
+msgid "Select a Salesforce Account"
+msgstr ""
+
+#: templates/feed-object.php:20
+msgid "Select a Salesforce Object"
+msgstr ""
+
+#: includes/plugin-pages.php:664
+msgid "Select a user as a owner of this object"
+msgstr ""
+
+#: pro/pro-mapping.php:95 pro/pro-mapping.php:100
+msgid "Select Account Feed"
+msgstr ""
+
+#: includes/plugin-pages.php:839 pro/pro-mapping.php:198
+#: pro/pro-mapping.php:204 pro/pro-mapping.php:213
+msgid "Select Campaign"
+msgstr ""
+
+#: pro/pro-mapping.php:277
+msgid "Select Contact Feed"
+msgstr ""
+
+#: pro/pro-mapping.php:272
+msgid "Select Contact Feed "
+msgstr ""
+
+#: pro/pro-mapping.php:139 pro/pro-mapping.php:144
+msgid "Select Contract Feed"
+msgstr ""
+
+#: includes/plugin-pages.php:658
+msgid ""
+"Select Contract feed. Contract created by this feed will be assigned to this "
+"object"
+msgstr ""
+
+#: templates/feed-account.php:764 templates/feed-account.php:861
+#: templates/fields-mapping.php:119 templates/fields-mapping.php:205
+msgid "Select Field"
+msgstr ""
+
+#: includes/plugin-pages.php:667 includes/plugin-pages.php:671
+msgid "Select fields which you want to send as a note"
+msgstr ""
+
+#: templates/setting.php:137
+#, php-format
+msgid "Select OAuth Scopes %s and %s then Save Application"
+msgstr ""
+
+#: includes/plugin-pages.php:1485 includes/plugin-pages.php:1855
+msgid "Select Object"
+msgstr ""
+
+#: templates/fields-mapping.php:516
+msgid "Select Primary Key"
+msgstr ""
+
+#: includes/plugin-pages.php:846 pro/pro-mapping.php:230
+msgid "Select Status"
+msgstr ""
+
+#: includes/plugin-pages.php:624
+msgid ""
+"Select the Contact Form you would like to integrate with Salesforce. "
+"Contacts generated by this form will be automatically added to your "
+"Salesforce account."
+msgstr ""
+
+#: includes/plugin-pages.php:622
+msgid "Select the Object to Create when a Form is Submitted."
+msgstr ""
+
+#: includes/plugin-pages.php:623
+msgid "Select the Salesforce account you would like to export entries to."
+msgstr ""
+
+#: includes/plugin-pages.php:860 pro/pro-mapping.php:43 pro/pro-mapping.php:48
+msgid "Select User"
+msgstr ""
+
+#: cf7-salesforce.php:749 cf7-salesforce.php:770 includes/plugin-pages.php:183
+#: includes/plugin-pages.php:416 includes/plugin-pages.php:1132
+#: templates/crm-entry-box.php:18
+msgid "Send to Salesforce"
+msgstr ""
+
+#: includes/plugin-pages.php:477 includes/plugin-pages.php:890
+#: templates/settings.php:58
+msgid "Settings"
+msgstr ""
+
+#: includes/plugin-pages.php:1542 includes/plugin-pages.php:1577
+msgid "Settings Changed Successfully"
+msgstr ""
+
+#: includes/plugin-pages.php:966 templates/setting.php:50
+#: templates/setting.php:128 templates/setting.php:151
+msgid "Show Key"
+msgstr ""
+
+#: templates/accounts.php:116
+msgid "Sign Up for Salesforce CRM"
+msgstr ""
+
+#: includes/plugin-pages.php:1268
+msgid "Standard Field"
+msgstr ""
+
+#: includes/plugin-pages.php:584 templates/settings-table.php:33
+#: templates/settings-table.php:70
+msgid "Status"
+msgstr ""
+
+#: includes/plugin-pages.php:1894
+msgid "Success: Your Org ID is properly configured"
+msgstr ""
+
+#: cf7-salesforce.php:1554
+#, php-format
+msgid "Successfully Added to Salesforce (%s) with ID # %s ."
+msgstr ""
+
+#: cf7-salesforce.php:1556
+#, php-format
+msgid "Successfully Added to Salesforce (%s) with ID # %s . View entry at %s"
+msgstr ""
+
+#: includes/plugin-pages.php:1912
+msgid "Successfully Connected to Salesforce"
+msgstr ""
+
+#: includes/plugin-pages.php:1081
+#, php-format
+msgid "Successfully Deleted %d Item(s)"
+msgstr ""
+
+#: cf7-salesforce.php:1563
+#, php-format
+msgid "Successfully Updated to Salesforce (%s) with ID # %s ."
+msgstr ""
+
+#: cf7-salesforce.php:1561
+#, php-format
+msgid "Successfully Updated to Salesforce (%s) with ID # %s . View entry at %s"
+msgstr ""
+
+#: templates/setting.php:99 templates/setting.php:100
+msgid "Test Connection"
+msgstr ""
+
+#: includes/plugin-pages.php:1641
+msgid "Test Connection: "
+msgstr ""
+
+#: includes/plugin-pages.php:637
+#, php-format
+msgid ""
+"The API features are more powerful than Web-to-Lead. You can create "
+"different object types, as well as other advanced features. If you have any "
+"of the following Salesforce Editions, you can use the included API Add-on: "
+"%s 1: Enterprise Edition %s 2: Unlimited Edition %s 3: Developer Edition %s "
+"4: Professional Edition - Requires API Upgrade"
+msgstr ""
+
+#: templates/feed-account.php:579
+msgid "This is a required field"
+msgstr ""
+
+#: includes/plugin-pages.php:639
+msgid ""
+"This option is for advanced users who want to override default Salesforce "
+"App."
+msgstr ""
+
+#: pro/add-ons.php:683
+#, php-format
+msgid "This Plugin requires %s plugin"
+msgstr ""
+
+#: includes/plugin-pages.php:584 templates/logs.php:343 templates/logs.php:363
+msgid "Time"
+msgstr ""
+
+#: templates/logs.php:273
+msgid "To Date"
+msgstr ""
+
+#: templates/feeds.php:35
+#, php-format
+msgid "To get started, please configure your %s Salesforce Settings %s."
+msgstr ""
+
+#: templates/feeds.php:133
+#, php-format
+msgid "To get started, please configure your %s Salesforce Settings%s."
+msgstr ""
+
+#: templates/setting.php:128
+msgid "Toggle Consumer Key"
+msgstr ""
+
+#: templates/setting.php:151
+msgid "Toggle Consumer Secret"
+msgstr ""
+
+#: templates/setting.php:50
+msgid "Toggle Key"
+msgstr ""
+
+#: pro/plugin-api.php:920
+msgid "Toggle License Key"
+msgstr ""
+
+#: templates/fields-mapping.php:401 templates/fields-mapping.php:455
+msgid "Trash"
+msgstr ""
+
+#: templates/fields-mapping.php:66 templates/fields-mapping.php:163
+msgid "Type:"
+msgstr ""
+
+#: cf7-salesforce.php:678 includes/plugin-pages.php:877
+msgid "Unknown Error"
+msgstr ""
+
+#: templates/settings.php:74
+msgid "Update Entry"
+msgstr ""
+
+#: templates/fields-mapping.php:540
+msgid "Update Entry "
+msgstr ""
+
+#: templates/settings.php:75
+msgid ""
+"Update entry data in Salesforce when updated in Contact Form Entries Plugin"
+msgstr ""
+
+#: templates/fields-mapping.php:666
+msgid "Update Feed"
+msgstr ""
+
+#: cf7-salesforce.php:684 includes/plugin-pages.php:1137
+msgid "Updated"
+msgstr ""
+
+#: pro/add-ons.php:695
+msgid "Updated :"
+msgstr ""
+
+#: pro/add-ons.php:738
+msgid "Upgrade"
+msgstr ""
+
+#: templates/setting.php:116
+msgid ""
+"Use Own Salesforce App - If you want to connect one Salesforce account to 5+ "
+"sites then use a separate Salesforce App for each 5 sites"
+msgstr ""
+
+#: pro/pro-mapping.php:30
+msgid "Users List"
+msgstr ""
+
+#: templates/fields-mapping.php:385 templates/fields-mapping.php:445
+msgid "Value"
+msgstr ""
+
+#: pro/add-ons.php:695
+msgid "Version :"
+msgstr ""
+
+#: templates/settings-table.php:54
+msgid "View"
+msgstr ""
+
+#: templates/logs.php:313
+msgid "View All Logs"
+msgstr ""
+
+#: cf7-salesforce.php:1605
+msgid "View Detail"
+msgstr ""
+
+#: templates/logs.php:310
+#, php-format
+msgid "View Entry# %s Logs"
+msgstr ""
+
+#: pro/add-ons.php:531
+msgid "Wait..."
+msgstr ""
+
+#: templates/feed-account.php:280
+#, php-format
+msgid ""
+"We are unable to login to Salesforce with the provided API token. Please "
+"make sure they are valid in the %sSettings Page%s"
+msgstr ""
+
+#: includes/plugin-pages.php:636
+#, php-format
+msgid ""
+"Web-to-Lead is available for all Salesforce Editions. If you are not sure if "
+"your Salesforce Edition supports the API, you should use Web-to-Lead. "
+"Editions that do not support the Salesforce API: %s 1: Personal Edition %s 2:"
+" Group Edition %s 3: Professional Edition %s Note: You can purchase API "
+"access for a Professional Edition"
+msgstr ""
+
+#: templates/setting.php:38
+msgid ""
+"Web-to-Lead or Web-to-Case (use this if API is not enabled for your Org) "
+msgstr ""
+
+#: includes/plugin-pages.php:650
+msgid "What should be Member Status."
+msgstr ""
+
+#: includes/plugin-pages.php:641
+msgid ""
+"When an order is sent to Salesforce we store that order information in the "
+"database and show it in the Salesforce Log. Check this box if you do not "
+"want to save the exported order information in the logs."
+msgstr ""
+
+#: includes/plugin-pages.php:628
+msgid ""
+"When the opt-in condition is enabled, form submissions will only be exported "
+"to Salesforce when the condition is met. When disabled all form submissions "
+"will be exported."
+msgstr ""
+
+#: includes/plugin-pages.php:649
+msgid "Which Campaign should be assigned to this object."
+msgstr ""
+
+#: includes/plugin-pages.php:634
+msgid "Which field should be used to update existing objects?"
+msgstr ""
+
+#: includes/plugin-pages.php:648
+msgid "Which Pricebook should be searched for product"
+msgstr ""
+
+#: pro/pro-mapping.php:23
+msgid "Yes and Do not trigger salesforce assignment rules"
+msgstr ""
+
+#: pro/add-ons.php:549
+msgid "You can activate, deactivate and delete add-ons here."
+msgstr ""
+
+#: templates/fields-mapping.php:126 templates/fields-mapping.php:213
+#, php-format
+msgid "You can add a form field %s in custom value from following form fields"
+msgstr ""
+
+#: templates/fields-mapping.php:605
+#, php-format
+msgid ""
+"You can add a form field %s in custom value from following form fields. You "
+"can use %s for separating note title from body"
+msgstr ""
+
+#: includes/plugin-pages.php:748
+msgid "You do not have permissions for this action"
+msgstr ""
+
+#: includes/plugin-pages.php:1001 includes/plugin-pages.php:1060
+#: includes/plugin-pages.php:1505 includes/plugin-pages.php:1556
+#: includes/plugin-pages.php:1662
+msgid "You do not have permissions to access this page"
+msgstr ""
+
+#: includes/plugin-pages.php:544
+msgid "You do not have permissions to add token"
+msgstr ""
+
+#: includes/plugin-pages.php:600
+msgid "You do not have permissions to clear logs"
+msgstr ""
+
+#: includes/plugin-pages.php:1680
+msgid "You do not have permissions to edit/save feed"
+msgstr ""
+
+#: includes/plugin-pages.php:573
+msgid "You do not have permissions to export logs"
+msgstr ""
+
+#: includes/plugin-pages.php:1573
+msgid "You do not have permissions to save settings"
+msgstr ""
+
+#: templates/feeds.php:126
+#, php-format
+msgid ""
+"You don't have any Salesforce feeds configured. Let's go %s create one %s!"
+msgstr ""
+
+#: pro/plugin-api.php:370
+#, php-format
+msgid "Your License Key expired. %sRenew it Now%s"
+msgstr ""
+
+#: templates/fields-mapping.php:600
+msgid "{field-id} text"
+msgstr ""
