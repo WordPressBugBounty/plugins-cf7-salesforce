@@ -2,7 +2,7 @@
 Contributors: crmperks, sbazzi, asif876
 Tags: wordpress salesforce, contact form 7 salesforce, WPforms salesforce, salesforce, Elementor forms salesforce
 Requires at least: 4.7
-Tested up to: 6.6
+Tested up to: 6.7
 Stable tag: 1.4.1
 Version: 1.4.1
 Requires PHP: 5.3
