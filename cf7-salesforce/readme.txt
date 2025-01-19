@@ -3,8 +3,8 @@ Contributors: crmperks, sbazzi, asif876
 Tags: wordpress salesforce, contact form 7 salesforce, WPforms salesforce, salesforce, Elementor forms salesforce
 Requires at least: 4.7
 Tested up to: 6.7
-Stable tag: 1.4.1
-Version: 1.4.1
+Stable tag: 1.4.2
+Version: 1.4.2
 Requires PHP: 5.3
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -192,6 +192,9 @@ Yes, you can use web to lead for creating leads and web to case for creating a c
 
 
 == Changelog ==
+
+= 1.4.2 =
+* fixed "empty file fields value" issue.
 
 = 1.4.1 =
 * fixed "order line items" issue.
