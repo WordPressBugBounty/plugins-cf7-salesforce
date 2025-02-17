@@ -1147,7 +1147,7 @@ public function get_items($meta){
          $sf_entry_json=json_encode($sf_entry);
        $sales_response=$this->post_sales_arr($path,'POST',$sf_entry_json);
        $extra['Add StandardBook '.$k]=$sf_entry;
-       $extra['StandardBook Redult '.$k]=$sales_response; 
+       $extra['StandardBook Result '.$k]=$sales_response; 
       // if($meta['standard_book'] == $price_book){ $price_book=''; }
     }
 } 
@@ -1158,7 +1158,7 @@ public function get_items($meta){
          $sf_entry_json=json_encode($sf_entry);
        $sales_response=$this->post_sales_arr($path,'POST',$sf_entry_json);
        $extra['Add PriceBook '.$k]=$sf_entry;
-       $extra['PriceBook Redult '.$k]=$sales_response;  
+       $extra['PriceBook Result '.$k]=$sales_response;  
        if(is_array($sales_response) && isset($sales_response['id'])){
            $price_book_id=$sales_response['id'];
        }  
