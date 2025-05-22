@@ -1366,7 +1366,7 @@ $date_val+= $offset;  //convert utc datetime to local timezone for getting exatc
       }
   } 
   if(is_array($field_val)){ 
-      $field_val=implode(', ',$field_val);
+      $field_val=implode('; ',$field_val); //REMOVED , @april-25 ; shows links for multiple files in textarea field while , does not convert to links
   }
   $sf_fields[$field_key]=$field_val;      
   }   
