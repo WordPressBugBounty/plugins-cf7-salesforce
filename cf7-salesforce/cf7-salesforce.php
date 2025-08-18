@@ -2,7 +2,7 @@
 /**
 * Plugin Name: WP Contact Form Salesforce
 * Description: Integrates Contact Form 7 , <a href="https://wordpress.org/plugins/contact-form-entries/">Contact Form Entries Plugin</a> and many other forms with Salesforce allowing form submissions to be automatically sent to your Salesforce account 
-* Version: 1.4.5
+* Version: 1.4.6
 * Requires at least: 4.7
 * Author URI: https://www.crmperks.com
 * Plugin URI: https://www.crmperks.com/plugins/contact-form-plugins/contact-form-salesforce-plugin/
@@ -23,7 +23,7 @@ class vxcf_sales {
   public  $crm_name = "salesforce";
   public  $id = "vxcf_sales";
   public  $domain = "vxcf-sales";
-  public  $version = "1.4.5";
+  public  $version = "1.4.6";
   public  $update_id = "6000001";
   public  $min_cf_version = "1.0";
   public  $type = "vxcf_sales";
@@ -96,7 +96,6 @@ require_once(self::$path . "includes/plugin-pages.php");
   */
   public function setup_main(){
 
-
  add_action('cfx_form_submitted', array($this, 'entry_created_crmperks'),10,3);
  add_action('vxcf_entry_created', array($this, 'entry_created'),10,3);
  add_action('vx_contact_created', array($this, 'entry_created_contacts'),10,3);
@@ -117,9 +116,25 @@ require_once(self::$path . "includes/plugin-pages.php");
   add_action('init', array($this,'init'));
        //loading translations
 load_plugin_textdomain('cf7-salesforce', FALSE,  $this->plugin_dir_name(). '/languages/' );
+$this->maybe_install(true);
+}
   
+  }
+  /**
+  * create tables and roles
+  * 
+  */
+public function maybe_install($version_check=false){
+    
+  if(current_user_can( 'manage_options' )){
   self::$db_version=get_option($this->type."_version");
-  if(self::$db_version != $this->version && current_user_can( 'manage_options' )){
+     $do_install=false;
+      if($version_check == false){
+        $do_install=true;  
+      }else if(self::$db_version != $this->version){
+        $do_install=true;   
+      }
+  if($do_install){
   $data=$this->get_data_object();
   $data->update_table();
   update_option($this->type."_version", $this->version);
@@ -127,11 +142,10 @@ load_plugin_textdomain('cf7-salesforce', FALSE,  $this->plugin_dir_name(). '/lan
   require_once(self::$path . "includes/install.php"); 
   $install=new vxcf_sales_install();
   $install->create_roles();   
-
   }
+  } 
 }
   
-  }
 
 public function form_submitted($form){ 
     //entries plugin exists , do not use this hook
@@ -517,28 +531,6 @@ self::$plugin->instance();
   echo '</p></div>';
   } 
 
-
-  /**
-  * create tables and roles
-  * 
-  */
-  public function install(){
-      
-  if(current_user_can( 'manage_options' )){
-  self::$db_version=get_option($this->type."_version");
-  if(self::$db_version != $this->version){
-  $data=$this->get_data_object();
-  $data->update_table();
-  update_option($this->type."_version", $this->version);
-  //add post permissions
-  require_once(self::$path . "includes/install.php"); 
-  $install=new vxcf_sales_install();
-  $install->create_roles();   
-
-  }
-
-  } 
-  }
 /**
 * Contact Form status
 * 
@@ -1273,6 +1265,7 @@ if(!current_user_can($this->id."_send_to_crm")){return; }
   */
   public function activate(){ 
 $this->plugin_api(true);
+$this->maybe_install();
 do_action('plugin_status_'.$this->type,'activate');  
   }
     /**
@@ -1701,9 +1694,7 @@ $this->form_fields='';
     $feed=array_merge($feed,$meta);  
   }     
   }
-  //
-  
-     
+  //   
 if( in_array($event,array('restore','update','delete','add_note','delete_note'))){ 
 $is_admin=true;
 $search_object=$object;

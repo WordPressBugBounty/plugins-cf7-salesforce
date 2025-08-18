@@ -223,7 +223,12 @@ class vxcf_sales_data extends vxcf_sales{
   }
   if($this->post('search')!=""){
   $search_s=esc_sql($this->post('search'));
-  $search.=' and (object like "'.$search_s.'" or crm_id="'.$search_s.'" or entry_id="'.$search_s.'")';   
+ $search.= ' and ';
+  if(is_numeric($search_s)){
+ $search.='entry_id='.floatval($search_s);    
+  }else{
+  $search.='crm_id="'.$search_s.'"';    
+  }
   }
   if(isset($_GET['log_id']) && !empty($_GET['log_id'])){
   $log_id=esc_sql($this->post('log_id'));
@@ -234,7 +239,7 @@ class vxcf_sales_data extends vxcf_sales{
   $search.=' and form_id="'.$form_id.'"';   
   }
   if($this->post('entry_id')!=""){
-  $entry_id=esc_sql($this->post('entry_id'));
+  $entry_id=floatval($this->post('entry_id'));
   $search.=' and entry_id="'.$entry_id.'"';   
   }
   if($this->post('feed_id')!=''){

@@ -663,7 +663,7 @@ unset($fields['vx_camp_id']);
   if(!empty($meta['primary_key_custom'])){
       $meta['primary_key']=$meta['primary_key_custom'];
   }
-  $search=$this->get_search_val($meta['primary_key'],$fields,$fields_info);
+  $search=$this->get_search_val($meta['primary_key'],$fields,$fields_info,true);
   //var_dump($search); die();
   $search=apply_filters('crm_perks_salesforce_search',$search,$fields);
   if( !empty($meta['primary_key2']) ){

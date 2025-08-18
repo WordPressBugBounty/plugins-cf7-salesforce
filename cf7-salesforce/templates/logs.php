@@ -273,7 +273,7 @@ margin-left: 8px;
   <input type="text" class="vxc_date crm_input_inline" value="<?php if(isset($_REQUEST['end_date'])){echo esc_attr($_REQUEST['end_date']);}?>" placeholder="<?php esc_html_e('To Date','cf7-salesforce') ?>" name="end_date"  style="width: 100px">
   </span>
  
-  <button type="submit" title="<?php esc_html_e('Search','cf7-salesforce') ?>" name="search" class="button-secondary button crm_input_inline"><i class="fa fa-search"></i> <?php esc_html_e('Search','cf7-salesforce') ?></button> 
+  <button type="submit" title="<?php esc_html_e('Search','cf7-salesforce') ?>" name="search_btn" class="button-secondary button crm_input_inline"><i class="fa fa-search"></i> <?php esc_html_e('Search','cf7-salesforce') ?></button> 
      
   </div>   </form> 
      <div style="clear: both;"></div> 
