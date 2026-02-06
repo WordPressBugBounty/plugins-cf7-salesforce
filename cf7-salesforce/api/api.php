@@ -803,6 +803,8 @@ $entry_exists=true;
          } if($object == 'PricebookEntry'){
        unset($fields['Product2Id']);
        unset($fields['Pricebook2Id']);
+         }if($object == 'OpportunityContactRole'){
+       unset($fields['OpportunityId']);
          }
       //   $fields['Custom_time_type__c']='12:00+00';
         
