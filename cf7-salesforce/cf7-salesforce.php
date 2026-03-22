@@ -2,7 +2,7 @@
 /**
 * Plugin Name: WP Contact Form Salesforce
 * Description: Integrates Contact Form 7 , <a href="https://wordpress.org/plugins/contact-form-entries/">Contact Form Entries Plugin</a> and many other forms with Salesforce allowing form submissions to be automatically sent to your Salesforce account 
-* Version: 1.4.8
+* Version: 1.4.9
 * Requires at least: 4.7
 * Author URI: https://www.crmperks.com
 * Plugin URI: https://www.crmperks.com/plugins/contact-form-plugins/contact-form-salesforce-plugin/
@@ -23,7 +23,7 @@ class vxcf_sales {
   public  $crm_name = "salesforce";
   public  $id = "vxcf_sales";
   public  $domain = "vxcf-sales";
-  public  $version = "1.4.8";
+  public  $version = "1.4.9";
   public  $update_id = "6000001";
   public  $min_cf_version = "1.0";
   public  $type = "vxcf_sales";
@@ -359,7 +359,9 @@ if(is_array($fields)){
       
       $name=$v['name'];
      if(isset($detail[$name])){
-         $val=maybe_unserialize($detail[$name]);
+     if(is_serialized($val)){
+           $val=unserialize($val, array('allowed_classes' => false));
+         }
      if($v['type'] == 'file'){ 
          $base_url=get_site_url();   
           if(!is_array($val)){
@@ -377,7 +379,7 @@ if(is_array($fields)){
     $uploaded_files_form[$name]=$files;
              
      }     
-  $lead[$name]=$detail[$name];          
+  $lead[$name]=$val;          
      }
   }  
 //
@@ -954,6 +956,9 @@ if( $type == 'file' && !empty($value)){
     if(class_exists('vxcf_form')){
 $upload=vxcf_form::get_upload_dir();  
 $temp_files=array(); 
+if ($value === 'attached') {
+$value = array();
+}
       if(!is_array($value)){ $value=array($value); }
 foreach($value as $f){
      if(filter_var($f,FILTER_VALIDATE_URL) === false){

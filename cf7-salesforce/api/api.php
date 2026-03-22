@@ -874,7 +874,9 @@ if(!empty($id)){
     $post=array('Title'=>$file_name); 
          if( filter_var($file, FILTER_VALIDATE_URL) && strpos($file,'/gravity_forms/') !== false) { //!ini_get('allow_url_fopen')
       $upload_dir=wp_upload_dir();
-       $file=str_replace($upload_dir['baseurl'],$upload_dir['basedir'],$file); 
+            if(!empty(trim($upload_dir['basedir'],'/'))){
+       $file=str_replace($upload_dir['baseurl'],$upload_dir['basedir'],$file);
+      } 
     }
   $c=file_get_contents($file);
   
