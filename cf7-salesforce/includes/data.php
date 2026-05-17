@@ -250,7 +250,7 @@ class vxcf_sales_data extends vxcf_sales{
   $sql_end.=" where ".substr($search,4);
   }
   if($this->post('orderby')!=""){
-  $sql_end.=' order by '.esc_sql($this->post('orderby'));   
+  $sql_end.=' order by '.sanitize_sql_orderby($this->post('orderby'));   
   if($this->post('order')!="" && in_array($this->post('order'),array("asc","desc"))){
   $sql_end.=' '.$this->post('order'); 
   }
