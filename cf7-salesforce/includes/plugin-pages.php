@@ -1911,6 +1911,7 @@ $api_check=(int)$this->post('valid_api',$info);
   if($this->post('api',$info) != "web"){
   if($check){ 
   $res=$api->get_crm_objects(); 
+  $info=$api->info;
   if(!empty($res) && is_string($res)){
   $info['error']=$res;   
   unset($info['access_token']); 

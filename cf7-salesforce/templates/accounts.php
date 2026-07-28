@@ -45,7 +45,7 @@
       display: table-cell; 
   }
  .crm_field .vx_td2 .vx_toggle_btn{
-      margin: 0 0 0 10px; vertical-align: baseline; width: 80px;
+      margin: 0 0 0 10px; vertical-align: baseline; 
   }
     .submit{
   display: none;
@@ -61,6 +61,16 @@
     link=btn.attr('data-test');   
   }
   btn.attr('href',link);
+  });
+    $('#vx_api_type').change(function(){
+   var login=$('#vx_login_div');
+   var app=$('#vx_custom_app_div');
+   if($(this).val() == 'client'){
+    login.hide(); app.show();   
+   }else{
+       login.show(); app.hide();
+   }
+
   });
     $(".vx_tabs_radio").click(function(){
   $(".vx_tabs").hide();   

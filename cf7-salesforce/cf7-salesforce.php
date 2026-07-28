@@ -2,7 +2,7 @@
 /**
 * Plugin Name: WP Contact Form Salesforce
 * Description: Integrates Contact Form 7 , <a href="https://wordpress.org/plugins/contact-form-entries/">Contact Form Entries Plugin</a> and many other forms with Salesforce allowing form submissions to be automatically sent to your Salesforce account 
-* Version: 1.5.0
+* Version: 1.5.1
 * Requires at least: 4.7
 * Author URI: https://www.crmperks.com
 * Plugin URI: https://www.crmperks.com/plugins/contact-form-plugins/contact-form-salesforce-plugin/
@@ -23,7 +23,7 @@ class vxcf_sales {
   public  $crm_name = "salesforce";
   public  $id = "vxcf_sales";
   public  $domain = "vxcf-sales";
-  public  $version = "1.5.0";
+  public  $version = "1.5.1";
   public  $update_id = "6000001";
   public  $min_cf_version = "1.0";
   public  $type = "vxcf_sales";
@@ -970,7 +970,9 @@ foreach($value as $f){
   $temp_files[]=$f;   
 }  $value=$temp_files;   
     } 
+ if(is_array($value)){   
 $value=trim(implode(',',$value));
+ }
  }else if( is_array($value) && count($value) == 1 ){
    $value=trim(implode(' ',$value));  
  }
