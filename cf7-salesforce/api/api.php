@@ -42,7 +42,7 @@ public function get_token($info=""){
   }   
      $env=$info['org_name'];
       if( !empty($info['env'])){
-       $env.='sandbox'; 
+       $env.='.sandbox'; 
       }
       $env.='.my'; 
     $info["instance_url"]='https://'.$env.'.salesforce.com';    
