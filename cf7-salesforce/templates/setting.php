@@ -3,13 +3,9 @@ if ( ! defined( 'ABSPATH' ) ) {
      exit;
  } 
    $api_type=$this->post('api_type',$info);
-  $org_name=trim($this->post('org_name',$info));
-  $pkce=$this->post('code',$info); 
-  if($api_type == '' && $org_name !='' && $pkce == ''){
-   $pkce=$api->get_code();   
-  }                                          
+  $org_name=trim($this->post('org_name',$info));                                          
 $name=$this->post('name',$info);  
-$api=$this->post('api',$info);  
+$api_web=$this->post('api',$info);  
 $self_dir=admin_url().'?'.$this->id.'_tab_action=get_code'; 
 
  ?>
@@ -28,7 +24,7 @@ $self_dir=admin_url().'?'.$this->id.'_tab_action=get_code';
   <label for="vx_env"><?php esc_html_e('Environment','cf7-salesforce'); ?></label>
   </div>
   <div class="crm_field_cell2">
-<select name="crm[env]" class="crm_text" id="vx_env" data-save="no" <?php if( $api!='web' && !empty($info['access_token'])){ echo 'disabled="disabled"'; } ?> >
+<select name="crm[env]" class="crm_text" id="vx_env" data-save="no" <?php if( $api_web!='web' && !empty($info['access_token'])){ echo 'disabled="disabled"'; } ?> >
   <?php $envs=array(''=>__('Production','cf7-salesforce'),'test'=>__('Sandbox','cf7-salesforce'));
 foreach($envs as $k=>$v){
     $sel='';
@@ -84,10 +80,10 @@ echo '<option value="'.esc_attr($k).'" '.$sel.'>'.esc_html($v).'</option>';
   <div class="vx_tabs" id="tab_vx_api" style="<?php if($this->post('api',$info) == "web"){echo 'display:none';} ?>">
   
       <div class="crm_field">
-  <div class="crm_field_cell1"><label for="vx_org_name"><?php esc_html_e('Salesforce domain name','cf7-salesforce'); ?></label>
+  <div class="crm_field_cell1"><label for="vx_org_name"><?php esc_html_e('Salesforce Org name','cf7-salesforce'); ?></label>
   </div>
   <div class="crm_field_cell2">
-  <input type="text" name="crm[org_name]" value="<?php echo esc_attr($this->post('org_name',$info)); ?>" id="vx_org_name" class="crm_text" required="required" placeholder="<?php echo esc_html_e('your-org-domain only','cf7-salesforce');  ?>" <?php if( $api!='web' && !empty($info['access_token'])){ echo 'disabled="disabled"'; } ?>>
+  <input type="text" name="crm[org_name]" value="<?php echo esc_attr($this->post('org_name',$info)); ?>" id="vx_org_name" class="crm_text" required="required" placeholder="<?php echo esc_html_e('your-org-domain only','cf7-salesforce');  ?>" <?php if( $api_web!='web' && !empty($info['access_token'])){ echo 'disabled="disabled"'; } ?>>
   <span class="howto"><?php esc_html_e('Go to Salesforce Setup > Company Settings > My Domain and copy "My Domain Name".','cf7-salesforce'); echo sprintf(__(" You can copy this from salesforce url. e.g %s.my.salesforce.com ",'cf7-salesforce'),'<code>your-org-domain</code>'); ?></span>
   </div>
   <div class="clear"></div>
@@ -100,7 +96,7 @@ echo '<option value="'.esc_attr($k).'" '.$sel.'>'.esc_html($v).'</option>';
   <label for="vx_api_type"><?php esc_html_e('Connection Type','cf7-salesforce'); ?></label>
   </div>
   <div class="crm_field_cell2">
-<select name="crm[api_type]" class="crm_text" id="vx_api_type" data-save="no" <?php if( $api!='web' && !empty($info['access_token'])){ echo 'disabled="disabled"'; } ?> >
+<select name="crm[api_type]" class="crm_text" id="vx_api_type" data-save="no" <?php if( $api_web!='web' && !empty($info['access_token'])){ echo 'disabled="disabled"'; } ?> >
   <?php $envs=array(''=>__('Web Server Flow (authorize as Salesforce User)','cf7-salesforce'),'client'=>__('Client Credentials Flow (using own salesforce app)','cf7-salesforce'));
 foreach($envs as $k=>$v){
     $sel='';
@@ -128,14 +124,6 @@ echo '<option value="'.esc_attr($k).'" '.$sel.'>'.esc_html($v).'</option>';
         ?></div>
             <a class="button button-secondary" id="vx_revoke" href="<?php echo esc_url($link."&".$this->id."_tab_action=get_token&vx_nonce=".$nonce.'&id='.$id)?>"><i class="fa fa-unlock"></i> <?php esc_html_e("Revoke Access",'cf7-salesforce'); ?></a>
   <?php
-  }else{
-  $test_link='https://test.salesforce.com/services/oauth2/authorize?response_type=code&state='.urlencode($link."&".$this->id."_tab_action=get_token&id=".$id."&vx_nonce=".$nonce.'&vx_env=test').'&client_id='.esc_html($client['client_id']).'&redirect_uri='.urlencode(esc_url($client['call_back'])).'&scope='.urlencode('api refresh_token'); 
-      
- $link_href='https://login.salesforce.com/services/oauth2/authorize?response_type=code&state='.urlencode($link."&".$this->id."_tab_action=get_token&id=".$id."&vx_nonce=".$nonce.'&vx_env=').'&client_id='.esc_html($client['client_id']).'&redirect_uri='.urlencode(esc_url($client['call_back'])).'&scope='.urlencode('api refresh_token').'&code_challenge='.$pkce; 
- if(!empty($info['env'])){ $link_href=$test_link; }    
-  ?>
-  <a class="button button-default button-hero sf_login" id="vx_login_btn" data-id="<?php echo esc_html($client['client_id']) ?>" href="<?php echo $link_href ?>" data-login="<?php echo $link_href ?>" target="_self" data-test="<?php echo $test_link ?>"> <i class="fa fa-lock"></i> <?php esc_html_e("Login with Salesforce",'cf7-salesforce'); ?></a>
-  <?php
   }
   ?>
 
@@ -158,7 +146,11 @@ echo '<option value="'.esc_attr($k).'" '.$sel.'>'.esc_html($v).'</option>';
   <div class="crm_field_cell1"><label><?php esc_html_e('Salesforce Access','cf7-salesforce'); ?></label></div>
   <div class="crm_field_cell2">
   <?php 
-  $test_link='https://test.salesforce.com/services/oauth2/authorize?response_type=code&state='.urlencode($link."&".$this->id."_tab_action=get_token&id=".$id."&vx_nonce=".$nonce.'&vx_env=test').'&client_id='.esc_html($client['client_id']).'&redirect_uri='.urlencode(esc_url($client['call_back'])).'&scope='.urlencode('api refresh_token'); 
+      $pkce=$this->post('code',$info); 
+  if($api_type == '' && $org_name !='' ){ //&& $pkce == ''
+   $pkce=$api->get_code();   
+  }
+  $test_link='https://test.salesforce.com/services/oauth2/authorize?response_type=code&state='.urlencode($link."&".$this->id."_tab_action=get_token&id=".$id."&vx_nonce=".$nonce.'&vx_env=test').'&client_id='.esc_html($client['client_id']).'&redirect_uri='.urlencode(esc_url($client['call_back'])).'&scope='.urlencode('api refresh_token').'&code_challenge='.$pkce; 
       
  $link_href='https://login.salesforce.com/services/oauth2/authorize?response_type=code&state='.urlencode($link."&".$this->id."_tab_action=get_token&id=".$id."&vx_nonce=".$nonce.'&vx_env=').'&client_id='.esc_html($client['client_id']).'&redirect_uri='.urlencode(esc_url($client['call_back'])).'&scope='.urlencode('api refresh_token').'&code_challenge='.$pkce; 
  if(!empty($info['env'])){ $link_href=$test_link; }    
